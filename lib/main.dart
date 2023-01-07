@@ -2,7 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:to_do_app/splash_screen.dart';
 import 'package:firebase_core/firebase_core.dart';
 
-void main()async{
+void main() async {
   WidgetsFlutterBinding.ensureInitialized();
   await Firebase.initializeApp();
   runApp(const MyApp());
@@ -15,7 +15,7 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-      title: 'Flutter Demo Project',
+      title: 'Flutter Demo',
       theme: ThemeData(
         primarySwatch: Colors.blue,
       ),
@@ -23,5 +23,3 @@ class MyApp extends StatelessWidget {
     );
   }
 }
-
-
